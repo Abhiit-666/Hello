@@ -19,6 +19,7 @@ pipeline{
     stage('build'){
       steps{
         script{
+          build 'job'
           gv.buildApp()
         }
       }
